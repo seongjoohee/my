@@ -68,7 +68,7 @@ body{background: #D9D9D9;color:#333;font-family: 'IBM Plex Sans KR', sans-serif;
     transition: all 0.5s ease;
 }
 
-.section1_wrap,.section2_wrap{
+.section1_wrap,.section2_wrap,.section3_wrap{
     width: 100%;
     padding: 50px 0;
     box-sizing: border-box;
@@ -82,7 +82,12 @@ body{background: #D9D9D9;color:#333;font-family: 'IBM Plex Sans KR', sans-serif;
     background: #012E40;
     transition: all 1.5s ease;
 }
-.section1,.section2{
+.section3_wrap:hover{
+    background: #22593F;
+    transition: all 1.5s ease;
+}
+
+.section1,.section2,.section3{
     width: 1000px;
     background: #fff;
     margin: 0 auto;
@@ -250,7 +255,6 @@ body{background: #D9D9D9;color:#333;font-family: 'IBM Plex Sans KR', sans-serif;
     line-height: 18px;
     margin: 0 10px;
 }
-
 .section2 .site li:hover .img img{
     transform: scale(1.1);
     transition: all 0.5s ease;
@@ -264,6 +268,29 @@ body{background: #D9D9D9;color:#333;font-family: 'IBM Plex Sans KR', sans-serif;
     font-weight: bold;
 }
 
+.section3 p{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+.section3 p span{
+    font-size: 12px;
+}
+.section3 p .fa-github{
+    font-size: 24px;
+}
+.section3 p a{
+    color: #666;
+}
+.section3 p br{
+    display: none;
+}
+.section3 p a:hover{
+    color: #A67458;
+    text-decoration: underline 2px dotted;
+}
+
 @media screen and ( max-width : 767px) {
     .menu{
         top: 30px;
@@ -272,7 +299,7 @@ body{background: #D9D9D9;color:#333;font-family: 'IBM Plex Sans KR', sans-serif;
     .section1_wrap,.section2_wrap{
         padding: 30px 0;
     }
-    .section1,.section2{
+    .section1,.section2,.section3{
         width: 85%;
         padding: 20px;
         border-radius: 0 20px 0 0;
@@ -312,5 +339,8 @@ body{background: #D9D9D9;color:#333;font-family: 'IBM Plex Sans KR', sans-serif;
     }
     .section2 .site li .img{
         height: 180px;
+    }
+    .section3 p br{
+        display: block;
     }
 }
